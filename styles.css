@@ -1,0 +1,58 @@
+body, html { 
+    margin: 0; 
+    padding: 0; 
+    overflow-x: hidden; 
+}
+
+canvas { 
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    z-index: -1; 
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+#navicon {
+    display: none;
+}
+
+@media only screen and (max-width: 680px) {
+    nav {
+        position: relative;  
+        display: flex;
+        justify-content: flex-end;  
+    }
+
+    #navicon {
+        display: block;
+        cursor: pointer;
+    }
+
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;            
+        right: 0;           
+        z-index: 2;
+        width: 150px;        
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2); 
+    }
+
+    #navicon:hover + ul,
+    nav ul:hover {
+        display: flex;
+        align-items: end;
+        padding-right: 10px;
+        z-index: 2;
+        background-color: #4E3883;
+        color: #FFDDCC;
+        border-radius: 15px;
+    }
+}

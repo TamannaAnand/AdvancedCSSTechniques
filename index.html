@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--  Author: Tamanna Anand
+    Title: Acme Creatives
+    Date: 2024-11-27 -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acme Creatives</title>
+    <link href="./dist/output.css" rel="stylesheet">
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-[#FFDDCC] text-[#4E3883]">
+
+    <!-- Canvas for interactive background -->
+    <canvas id="interactiveCanvas"></canvas>
+
+    <!-- Navigation -->
+    <nav class="p-5 bg-[#FFDDCC] fixed w-full z-10 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="text-3xl font-bold text-[#4E3883]"><a href="#home">ACME Creatives</a></div>
+            <a id="navicon" href="#"><img src="icons8-menu-50 (3).png" alt="navicon" class="h-10 w-10"></a>
+            <ul class="space-x-6 hidden md:flex">
+                <li><a href="#about" class="hover:text-[#8A6DA3] transition duration-300">About</a></li>
+                <li><a href="#services" class="hover:text-[#8A6DA3] transition duration-300">Services</a></li>
+                <li><a href="#portfolio" class="hover:text-[#8A6DA3] transition duration-300">Portfolio</a></li>
+                <li><a href="#testimonials" class="hover:text-[#8A6DA3] transition duration-300">Testimonials</a></li>
+                <li><a href="#contact" class="hover:text-[#8A6DA3] transition duration-300">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="h-screen flex items-center justify-center text-center relative">
+        <div>
+            <h1 class="text-5xl md:text-7xl font-extrabold mb-4 text-[#4E3883]">Crafting Captivating Experiences</h1>
+            <p class="text-lg md:text-2xl text-[#4E3883]">Digital Marketing & Web Design Agency</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-[#4E3883] text-[#FFDDCC]">
+        <div class="container mx-auto px-6 md:px-12 text-center">
+            <h2 class="text-4xl font-semibold mb-8">About Us</h2>
+            <p class="text-lg leading-relaxed">
+                At Acme Creatives, creativity isn't just our business—it's our passion. We are a dynamic collective of designers, strategists, and storytellers dedicated to transforming ideas into captivating experiences. Founded on the belief that every brand has a unique story, we specialize in crafting innovative solutions that not only engage but inspire.<br>
+
+                From eye-catching visuals to strategic campaigns, we blend artistry with purpose, turning visions into reality. Our team thrives on collaboration, pushing boundaries, and exploring new creative frontiers to ensure that every project stands out in a crowded marketplace.
+                
+                Based in Halifax, we've partnered with diverse clients—from startups to established enterprises—helping them amplify their presence and connect with their audiences in meaningful ways.
+                
+                Let us help you tell your story. Together, we create more than content; we build lasting impressions.
+            </p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20">
+        <div class="container mx-auto px-6 md:px-12">
+            <h2 class="text-4xl font-semibold text-center mb-8 text-[#4E3883]">Our Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="     bg-[#FFDDCC] border-2 border-[#4E3883] p-8 rounded-lg text-center shadow-lg">
+                    <h3 class="text-2xl font-semibold mb-4 text-[#4E3883]">Web Design</h3>
+                    <p>Responsive and innovative web design solutions tailored to your brand.</p>
+                </div>
+                <div class="bg-[#FFDDCC] border-2 border-[#4E3883] p-8 rounded-lg text-center shadow-lg">
+                    <h3 class="text-2xl font-semibold mb-4 text-[#4E3883]">Digital Marketing</h3>
+                    <p>Boost your online presence with our strategic marketing expertise.</p>
+                </div>
+                <div class="bg-[#FFDDCC] border-2 border-[#4E3883] p-8 rounded-lg text-center shadow-lg">
+                    <h3 class="text-2xl font-semibold mb-4 text-[#4E3883]">SEO Optimization</h3>
+                    <p>Increase visibility and organic traffic with tailored SEO strategies.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-20 bg-[#4E3883] text-[#FFDDCC]">
+        <div class="container mx-auto px-6 md:px-12">
+            <h2 class="text-4xl font-semibold text-center mb-8">Our Portfolio</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="bg-[#FFDDCC] border-2 border-[#4E3883] p-6 rounded-lg shadow-lg">
+                    <img src="Creative_Website_Redesign.png" alt="Project 1" class="rounded mb-4">
+                    <h3 class="text-2xl font-semibold mb-2 text-[#4E3883]">Creative Website Redesign</h3>
+                    <p class="text-[#4E3883]">Revamped a client's website for better engagement and UX.</p>
+                </div>
+                <!-- Project 2 -->
+                <div class="bg-[#FFDDCC] border-2 border-[#4E3883] p-6 rounded-lg shadow-lg">
+                    <img src="SEO_Optimization.png" alt="Project 2" class="rounded mb-4">
+                    <h3 class="text-2xl font-semibold mb-2 text-[#4E3883]">SEO Optimization Campaign</h3>
+                    <p class="text-[#4E3883]">Increased organic traffic by 60% through SEO strategies.</p>
+                </div>
+                <!-- Project 3 -->
+                <div class="bg-[#FFDDCC] border-2 border-[#4E3883] p-6 rounded-lg shadow-lg">
+                    <img src="Social_Media_Branding.png" alt="Project 3" class="rounded mb-4">
+                    <h3 class="text-2xl font-semibold mb-2 text-[#4E3883]">Social Media Branding</h3>
+                    <p class="text-[#4E3883]">Enhanced brand identity across social media platforms.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20">
+        <div class="container mx-auto px-6 md:px-12 text-center">
+            <h2 class="text-4xl font-semibold mb-8 text-[#4E3883]">What Our Clients Say</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-[#FFDDCC] p-6 rounded-lg shadow-lg border-2 border-[#4E3883]">
+                    <p class="mb-4 text-[#4E3883]">"Acme Creatives transformed our online presence. Their creative approach brought our vision to life!"</p>
+                    <h4 class="text-[#4E3883] font-semibold">— Jane Doe, CEO of Brand X</h4>
+                </div>
+                <!-- Testimonial 2 -->
+                <div class="bg-[#FFDDCC] p-6 rounded-lg shadow-lg border-2 border-[#4E3883]">
+                    <p class="mb-4 text-[#4E3883]">"Professional, innovative, and results-driven. Highly recommend their services!"</p>
+                    <h4 class="text-[#4E3883] font-semibold">— John Smith, Marketing Director at Y Corp</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-[#4E3883] text-[#FFDDCC]">
+        <div class="container mx-auto px-6 md:px-12 text-center">
+            <h2 class="text-4xl font-semibold mb-8">Get In Touch</h2>
+            <p class="mb-8">We'd love to hear from you! Let's bring your vision to life.</p>
+            <a href="mailto:info@acmecreatives.com" class="text-[#FFDDCC] text-xl underline hover:text-[#C8A8DD]">info@acmecreatives.com</a>
+        </div>
+    </section>
+</body>
+</html>
